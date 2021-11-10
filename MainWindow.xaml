@@ -1,0 +1,23 @@
+﻿<Window x:Class="Wpf_CheckBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_CheckBox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="Aqua" >
+    <StackPanel>
+        <Label Content="Name :" Height="36" Margin="28,0" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="txt_Name" Height="35" TextWrapping="Wrap"  Margin="28,0" Background="#FFFBF2F2" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Vorname :" Height="37" Margin="28,0" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="txt_Vorname" Height="38" TextWrapping="Wrap"  Margin="28,0" Background="#FFFBF2F2" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Password :" Height="40" Margin="28,0" FontSize="20" FontWeight="Bold"/>
+        <PasswordBox x:Name="psw"  Height="41" Margin="28,0" FontSize="20" FontWeight="Bold" Background="#FFF9EDED"/>
+        <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" Content="  AGB akzeptieren" Height="44" Margin="28,20,0,0" HorizontalAlignment="Left" Width="736" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="btn" IsEnabled="False" Content="Akzeptieren" Height="52" Margin="153,0,0,0" HorizontalAlignment="Left" Width="409" Background="#FF5D63DC" FontSize="20" FontWeight="Bold" Click="btn_Click" RenderTransformOrigin="0.507,1.085"/>
+        <Label  Name="lbl_out"  Content="" Height="70" FontSize="20" FontWeight="Bold"/>
+
+
+
+    </StackPanel>
+</Window>
